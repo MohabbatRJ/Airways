@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJ Airways</title>
+
+    <!-- style css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome - Only Solid Icon Available -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- top navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="topMenu">
+        <div class="container text-center justify-content-center justify-content-lg-between">
+            <!-- Logo start  -->
+            <a class="navbar-brand logo " href="#">
+                <img src="./images/logo.png" alt="logo airways">
+            </a>
+            <!-- Logo End  -->
+            <!-- Search start  -->
+            <form class="d-flex align-items-center outline-none search bg-dark">
+                <input class="form-control me-2 border-0 shadow-none bg-transparent text-orange" type="search" placeholder="Search"
+                    aria-label="Search">
+                <i class="fa-solid fa-search icon me-2 d-flex justify-content-center align-items-center"></i>
+            </form>
+            <!-- Search start  -->
+        </div>
+    </nav>
+    <!-- top navbar end -->
+
+    <!-- main menu navbar start -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-0 px-5" id="mainMenu">
+        <div class="container-fluid">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-bars fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-capitalize fs-5 ">
+                    <li class="nav-item me-2">
+                        <a id="tool" class="nav-link active " aria-current="page" href="#" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Home">home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">Flights</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">Tours</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- main menu top navbar end -->
+
+    <!-- banner start  -->
+    <section id="banner" class="py-5">
+        <!-- top banner start  -->
+        <div class="container banner-top mb-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-10 text-capitalize text-center text-light top-content">
+                    <h1 class="display-5 fw-bold">book your flights with us</h1>
+                    <p class="fs-5">Book your flights online with us. Explore our routes, find the best fares and see
+                        what's on your flight. Complete your trip with hotels and car hire.</p>
+                    <a name="" id="learnMore" class="btn btn-warning fs-5 shadow-none btn-link" href="#"
+                        role="button">learn more</a>
+                </div>
+            </div>
+        </div>
+        <!-- top banner end  -->
+
+        <!-- banner bottom start  -->
+        <div class="container banner-bottom bg-light rounded-3 py-2 mt-5">
+            <div class="row flex-column bottom-table">
+                <div class="col d-flex flex-md-row flex-column gap-2 ">
+                    <div class="col d-flex flex-column gap-2">
+                        <div>
+                            <h4 class="text-center">Destination</h4>
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <h6>From</h6>
+                                </div>
+                                <div>
+                                    <h6>To</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex gap-2">
+                            <select class="form-select text-uppercase bg-orange text-white shadow-none border-0" aria-label="Default select example">
+                                <option selected>From</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select text-uppercase bg-orange text-white shadow-none border-0" aria-label="Default select example">
+                                <option selected>TO</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex flex-column gap-2">
+                        <div>
+                            <h4 class="text-center">Date</h4>
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <h6>CheckIn</h6>
+                                </div>
+                                <div>
+                                    <h6>CheckOut</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex gap-2">
+                            <select class="form-select text-uppercase bg-orange text-white shadow-none border-0" aria-label="Default select example">
+                                <option selected>Check in</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select text-uppercase bg-orange text-white shadow-none border-0" aria-label="Default select example">
+                                <option selected>Check Out</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex flex-column gap-2">
+                        <div>
+                            <h4 class="text-center">Passengers</h4>
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <h6>Adults</h6>
+                                </div>
+                                <div>
+                                    <h6>Childrens</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex gap-2">
+                            <select class="form-select text-uppercase bg-orange text-white shadow-none border-0" aria-label="Default select example">
+                                <option selected>Adults</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select text-uppercase bg-orange text-white shadow-none border-0" aria-label="Default select example">
+                                <option selected>Childrens</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex justify-content-center align-items-end">
+                        <a name="" id="searchFlilght" class="btn btn-warning fs-6 shadow-none btn-link" href="#"
+                            role="button">Search Flight
+                            <i class="fa-solid fa-search fs-6 icon me-2 text-white"></i>
+                        </a>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- banner bottom end  -->
+    </section>
+    <!-- banner end  -->
+
+
+    <!-- Tour Start  -->
+    <div class="container-fluid p-5">
+        <!-- top tour content Start  -->
+        <div class="row" id="tourTop">
+            <div class="col text-center">
+                <h1 class="display-4 fw-bold">Tour</h1>
+                <p class="display-6 fs-5 fw-normal">You need look no further; We have everything you need! Positive
+                    Vibes, People, Places and Food. The itinerary was carefully thought through and well balanced....
+                </p>
+            </div>
+        </div>
+        <!-- top tour content End  -->
+
+        <!-- Bottom tour content Start  -->
+        <div class="row align-items-center py-5 flex-md-row flex-column gap-3" id="tourBottom">
+            <!-- bottom card 1 start  -->
+            <div class="col d-flex justify-content-center">
+                <div class="card w-100 cardAnimation">
+                    <img src="./images/tour4.jpg" class="card-img-top" alt="...">
+                    <div
+                        class="card-footer d-flex justify-content-between flex-wrap fw-bold text-uppercase text-light border-3 border-danger border-bottom border-top-0 shadow bg-orange">
+                        <span>Singapore</span>
+                        <span>$2450</span>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom card 1 end  -->
+
+            <!-- bottom card 2 start  -->
+            <div class="col d-flex justify-content-center align-items-center ">
+                <div class="card w-100 border-0">
+                    <div
+                        class="card-footer d-flex justify-content-between flex-wrap fw-bold text-uppercase text-light border-3 border-danger border-bottom border-top-0 shadow bg-orange ">
+                        <span>Paris</span>
+                        <span>$5550</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text fs-6 fw-bold">The trip represented great travel for the cost.Plan your next
+                            trip, read reviews and get travel advice from our community
+                        </p>
+                        <div class="col d-flex justify-content-between flex-wrap fs-6">
+                            <div class="col-md-4 d-flex justify-content-between flex-column gap-3">
+                                <span>
+                                    <i class="fa-solid fa-car"></i>
+                                    Service
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-mug-hot"></i>
+                                    Meal
+                                </span>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-between flex-column gap-3">
+                                <span>
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    Laguages
+                                </span>
+                                <span class="align-self-start">
+                                    <i class="fa-solid fa-building"></i>
+                                    Room
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-1 text-center text-capitalize">
+                            <a name="" id="learnMore" class="btn btn-warning fs-5 mt-4 shadow-none btn-link" href="#"
+                                role="button">
+                                learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom card 2 end  -->
+
+            <!-- bottom card 3 start  -->
+            <div class="col d-flex justify-content-center">
+                <div class="card  cardAnimation">
+                    <img src="./images/tour1.jpg" class="card-img-top" alt="...">
+                    <div
+                        class="card-footer d-flex justify-content-between flex-wrap fw-bold text-uppercase text-light border-3 border-danger border-bottom border-top-0 shadow bg-orange">
+                        <span>Singapore</span>
+                        <span>$3350</span>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom card 3 end  -->
+        </div>
+        <!-- Bottom tour content End  -->
+    </div>
+    <!-- Tour End  -->
+
+
+    <!-- Hotel Start  -->
+    <div class="container-fluid py-5 " id="hotel">
+        <div class="row py-5 text-uppercase text-white text-center fs-5">
+            <h6>Week In</h6>
+            <h1>The CLIF BAY HOTEL</h1>
+            <p>book the perfect tour or attraction, and reserve a table at the best restaurants.</p>
+            <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+                <a name="" id="learnMore" class="btn btn-warning fs-5 mt-4 shadow-none btn-link" href="#" role="button">
+                    learn more
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Hotel End  -->
+
+    <!-- Help Start  -->
+    <div class="container py-5" id="help">
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <h1>Need Help?</h1>
+            </div>
+            <!-- <div class="row">
+                <div class="col-10">
+                    
+                </div>
+            </div> -->
+            <div class="row py-5 px-0 justify-content-center flex-column flex-lg-row ">
+                <div class="col-lg-6 gap-4 d-flex flex-column flex-md-row">
+                    <!-- help card one start  -->
+                    <div class="col">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-circle-question display-2 mb-2 text-orange"></i>
+                                <h4 class="card-title text-uppercase">faq</h4>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, a
+                                    praesentium. Adipisci nam fugit ut explicabo, ipsum id consequuntur. Quos sed harum
+                                    recusandae deleniti quae.</p>
+                                <a name="" id="learnMore"
+                                    class="btn btn-warning fs-5 mt-2 shadow-none text-capitalize btn-link" href="#"
+                                    role="button">
+                                    learn more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- help card one end  -->
+                    <!-- help card two start  -->
+                    <div class="col">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-triangle-exclamation display-2 mb-2 text-orange"></i>
+                                <h4 class="card-title text-uppercase">Emergency</h4>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, a
+                                    praesentium. Adipisci nam fugit ut explicabo, ipsum id consequuntur. Quos sed harum
+                                    recusandae deleniti quae.</p>
+                                <a name="" id="learnMore"
+                                    class="btn btn-warning fs-5 mt-2 shadow-none text-capitalize btn-link" href="#"
+                                    role="button">
+                                    learn more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- help card two end  -->
+                <!-- help card three start  -->
+                <div class="col-lg-6 gap-4 d-flex flex-column flex-md-row mt-4 mt-lg-0">
+                    <div class="col">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-user-shield display-2 mb-2 text-orange"></i>
+                                <h4 class="card-title text-uppercase">Security</h4>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
+                                    a praesentium. Adipisci nam fugit ut explicabo, ipsum id consequuntur. Quos sed
+                                    harum recusandae deleniti quae.</p>
+                                <a name="" id="learnMore"
+                                    class="btn btn-warning fs-5 mt-2 shadow-none text-capitalize btn-link" href="#"
+                                    role="button">
+                                    learn more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- help card three end  -->
+                    <!-- help card four start  -->
+                    <div class="col">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-phone-volume display-2 mb-2 text-orange"></i>
+                                <h4 class="card-title text-uppercase">Call</h4>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
+                                    a praesentium. Adipisci nam fugit ut explicabo, ipsum id consequuntur. Quos sed
+                                    harum recusandae deleniti quae.</p>
+                                <a name="" id="learnMore"
+                                    class="btn btn-warning fs-5 mt-2 shadow-none text-capitalize btn-link" href="#"
+                                    role="button">
+                                    learn more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- help card end start  -->
+            </div>
+        </div>
+    </div>
+    <!-- Help End  -->
+
+    <!-- Footer Start  -->
+    <footer class="container-fluid pt-5 px-5 bg-dark text-white" id="footer">
+        <div class="row flex-md-row flex-column gap-4">
+            <!-- footer blog start  -->
+            <div class="col ps-5">
+                <h3>Our Blog</h3>
+                <div class="col d-flex justify-content-start align-items-md-center flex-column flex-sm-row mb-3">
+                    <div class="w-75 me-2 cardAnimation">
+                        <img src="./images/tour2.jpg" class="img-fluid rounded-start  " alt="...">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-start flex-column ">
+                        <a href="#" class="text-orange text-decoration-none">
+                            <h5 class="card-title">Beautiful Place</h5>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+                            blanditiis!</p>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-md-center flex-column flex-sm-row">
+                    <div class="w-75 me-2 cardAnimation">
+                        <img src="./images/tour3.jpg" class="img-fluid rounded-start  " alt="...">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-start flex-column">
+                        <a href="#" class="text-orange text-decoration-none">
+                            <h5 class="card-title">Travel Insurance</h5>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+                            blanditiis!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- footer blog end  -->
+            <!-- footer contact start  -->
+            <div class="col ps-5 fs-5">
+                <h3 class="">Contact Us</h3>
+                <div class="d-flex flex-column gap-3">
+                    <span>
+                        <i class="fa-brands fa-whatsapp text-orange "></i>
+                        <a href="#footer" class="text-decoration-none text-white">+923081474911</a>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-twitter text-orange "></i>
+                        <a href="www.twitter.com/MohabbatRJ.WebD" class="text-decoration-none text-white">MohabbatRJ.WebD</a>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-envelope text-orange "></i>
+                        <a href="#footer" class="text-decoration-none text-white">mohabbatrj00</a>
+                    </span>
+                </div>
+            </div>
+            <!-- footer contact end  -->
+            <!-- footer newsletter start  -->
+            <div class="col-12 col-lg-4 ps-5">
+                <h3>Subscribe Our News</h3>
+                <p>Signup for mailing list to get latest update</p>
+                        <div class="col-md">
+                            <div class="form-floating d-flex flex-column flex-sm-row">
+                                <input type="email" class="form-control w-auto h-25 border-0 shadow-none" id="floatingInputGrid"
+                                    placeholder="name@example.com" value="">
+                                <label for="floatingInputGrid" class="text-dark">Email address</label>
+                                <a name="" id="learnMore" class="btn btn-warning fs-5 my-2 ms-1 w-auto shadow-none text-capitalize btn-link" href="#" role="button">
+                                    Send
+                                </a>
+                            </div>
+                        </div>
+            </div>
+            <!-- footer newsletter end  -->
+        </div>
+
+        <!-- footer end start  -->
+        <div class="row mb-0 mt-5 ">
+            <div class="col bg-light d-flex justify-content-between align-items-center p-3 flex-column flex-sm-row">
+                <a class="navbar-brand logo" href="#">
+                    <img src="./images/logo.png" alt="logo airways">
+                </a>
+                <!-- Logo End  -->
+                <!-- copyright start  -->
+                <p class="mb-0 text-dark fw-bold fs-5">
+                    © 2023 RJ Airways
+                </p>
+                <!-- copyright end  -->
+            </div>
+        </div>
+        <!-- footer end End  -->
+    </footer>
+    <!-- Footer End  -->
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- js  -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

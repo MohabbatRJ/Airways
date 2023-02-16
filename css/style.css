@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainOrange: #fa9415;
+    --mainDark: #2b3d47;
+    --mainDarkLight: #aba194;
+    --mainLight: #efc468;
+    --mainLighter: #edad3c;
+    --mainWhite: #ffffff;
+    --mainGrey: #eeeeee;
+}
+
+h5:hover{
+    color: var(--mainLight) !important;
+}
+
+.bg-orange {
+    background-color: var(--mainOrange) !important;
+}
+
+.text-orange {
+    color: var(--mainOrange) !important;
+}
+
+.icon {
+    color: var(--mainOrange);
+    cursor: pointer;
+}
+
+
+
+.btn-link {
+    color: var(--mainWhite) !important;
+    background: var(--mainOrange) !important;
+    border-radius: 20px !important;
+    text-decoration: none !important;
+    border: 2px solid var(--mainLighter) !important;
+}
+
+.btn-link:hover {
+    background-color: var(--mainLight) !important;
+    /* color: var(--mainDarkLight) !important; */
+}
+
+.logo img {
+    width: 155px;
+}
+
+/* top nav  */
+
+.nav-item a::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: var(--mainLight);
+    transition: 0.5s;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.search {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1.5px solid var(--mainOrange) !important;
+}
+
+.search input {
+    width: 0;
+    line-height: 40px;
+    transition: all 0.4s linear;
+}
+
+.search i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.search:hover>i {
+    color: var(--mainOrange);
+    background: var(--mainDark);
+}
+
+.search:hover>input {
+    width: 450px;
+    caret-color: var(--mainOrange);
+    transition: all 0.4s linear;
+}
+
+@media (max-width: 576px) {
+    .search:hover>input {
+        width: 150px;
+    }
+}
+
+/* main menu  */
+#mainMenu ul li:hover {
+    /* background-color: var(--mainOrange); */
+    color: var(--mainLight);
+}
+
+#mainMenu button {
+    color: var(--mainOrange);
+}
+
+#banner {
+    /* border: 1px solid red; */
+    background: url('../images/bg1.jpg') no-repeat center/cover;
+    /* max-height: calc(100vh - 50px) !important; */
+    box-shadow: 200px 200px 400px 115px rgba(0, 0, 0, 0.51) inset;
+}
+
+#banner .banner-top {
+    z-index: -100000;
+}
+
+/* tour start */
+.cardAnimation {
+    overflow: hidden
+}
+
+.cardAnimation img, .cardAnimation:after, .cardAnimation:before {
+    width: 100%;
+    transition: all .3s ease 0s;
+}
+
+.cardAnimation .card-footer{
+    z-index: 1;
+}
+.cardAnimation img {
+    height: auto;
+    transform: scale(1) rotate(0)
+}
+
+.cardAnimation img:hover {
+    /* filter:(80%); */
+    transform: scale(1.3) rotate(10deg)
+}
+
+/* tour end */
+
+#hotel {
+    background: url('../images/hotel1.jpg') no-repeat center/cover;
+    /* min-height: calc(100vh - 350px); */
+    box-shadow: 200px 200px 400px 115px rgba(129, 72, 2, 0.7) inset;
+}
