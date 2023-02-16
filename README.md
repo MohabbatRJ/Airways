@@ -3,5 +3,4 @@
 
 A website idea for Airline Simple idea for project, only front-end with html,css, bootstrap and js by MohabbatRJ
 ## website link
-<a href="https://mohabbatrj.github.io/airways" target="_blank">Airways</a>
-
+<a href="https://mohabbatrj.github.io/Airways" target="_blank">Airways</a> 
